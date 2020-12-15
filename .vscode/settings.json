@@ -1,0 +1,5 @@
+{
+    "editor.fontSize": 20,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": true,
+}
