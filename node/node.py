@@ -1,23 +1,30 @@
 import threading
-import time
-from block.block import block
+from block_chain.chain import block_chain
 
-class node(threading.Thread):
-    def __init__(self, node_id):
-        self.node_id = node_id
-        super().__init__()
-        print("Node ", self.node_id, " is initialized")
-        
 
-    def run(self):
-        current_block = block()
-        current_block.mining()
-        
-if __name__ =="__main__":
-    nodes_num = 10
+chain = block_chain()
+
+
+def mining(node_id):
+    for j in range(0, 30):
+        chain.mining(node_id)
+
+
+def simulate_pow(nodes_num=10, difficulty="000"):
     nodes = list()
-    for i in range (0, nodes_num):
-        nodes.append(node(i))
+    chain.set_difficulty(difficulty)
+    for i in range(0, nodes_num):
+        nodes.append(threading.Thread(target=mining, args=(i,)))
+    j = 0
     for n in nodes:
         n.start()
-        # n.run()
+        print("node %d starts mining." % j)
+        j = j+1
+    for n in nodes:
+        n.join()
+    chain.check()
+    chain.display()
+
+
+if __name__ == "__main__":
+    simulate_pow()
