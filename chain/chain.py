@@ -1,6 +1,8 @@
 from block.block import block, gen_genesis
-from block.common import gen_nonce
+from util.gen import gen_nonce
+from util.performance import mining_time_list, miner_account
 import time
+import logging
 
 
 class block_chain:
@@ -28,7 +30,7 @@ class block_chain:
         print("The block chain is valid")
         return True
 
-    def display(self):
+    def print(self):
         i = 1
         print("###########################################################")
         for b in self.chain:
@@ -38,8 +40,8 @@ class block_chain:
             print("###########################################################")
 
     def mining(self, node_id):
-        start_time = time.time()  # record the time when you start mining
-        length = self.length()  # record the length when you start mining
+        start_time = time.time()  # record the time when the miner starts mining
+        length = self.length()  # record the length when the miner starts mining
 
         new_block = block(self.latest_block().hash(), self.t, node_id)
         flag = False
@@ -64,11 +66,17 @@ class block_chain:
         if flag:
             end_time = time.time()  # record the time when you finish mining
             mining_time = end_time - start_time
-            print("One block is dug out. Its mining time is:", mining_time)
+            logging.info("One block is dug out. Its mining time is: %d. "
+                         "Its miner is %d. " % (mining_time, node_id))
+            mining_time_list.append(mining_time)
+            if miner_account.get(node_id) is None:
+                miner_account[node_id] = 1
+            else:
+                miner_account[node_id] = miner_account[node_id] + 1
             self.chain.append(new_block)
 
 
 if __name__ == "__main__":
     chain = block_chain()
-    chain.mining()
-    chain.display()
+    chain.mining(node_id=0)
+    chain.print()

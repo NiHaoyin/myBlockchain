@@ -1,0 +1,60 @@
+14:24:19 PM: honest node 1 is ready.
+14:24:19 PM: node 1 starts mining.
+14:24:19 PM: honest node 2 is ready.
+14:24:19 PM: node 2 starts mining.
+14:24:19 PM: honest node 3 is ready.
+14:24:19 PM: node 3 starts mining.
+14:24:19 PM: honest node 4 is ready.
+14:24:19 PM: node 4 starts mining.
+14:24:19 PM: honest node 5 is ready.
+14:24:19 PM: node 5 starts mining.
+14:24:19 PM: honest node 6 is ready.
+14:24:20 PM: node 6 starts mining.
+14:24:20 PM: honest node 7 is ready.
+14:24:20 PM: node 7 starts mining.
+14:24:21 PM: honest node 8 is ready.
+14:24:21 PM: node 8 starts mining.
+14:24:21 PM: honest node 9 is ready.
+14:24:21 PM: node 9 starts mining.
+14:24:22 PM: evil node 10 is ready.
+14:24:22 PM: node 10 starts mining.
+14:24:24 PM: One block is dug out. Its mining time is: 2. Its miner is 10. 
+14:24:27 PM: One block is dug out. Its mining time is: 8. Its miner is 3. 
+14:24:28 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:28 PM: One block is dug out. Its mining time is: 0. Its miner is 6. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 2. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 7. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 4. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 5. 
+14:24:29 PM: One block is dug out. Its mining time is: 0. Its miner is 8. 
+14:24:30 PM: One block is dug out. Its mining time is: 0. Its miner is 9. 
+14:24:30 PM: One block is dug out. Its mining time is: 0. Its miner is 8. 
+14:24:30 PM: One block is dug out. Its mining time is: 0. Its miner is 5. 
+14:24:30 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:30 PM: One block is dug out. Its mining time is: 0. Its miner is 2. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 7. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 9. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 1. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 5. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 5. 
+14:24:31 PM: One block is dug out. Its mining time is: 0. Its miner is 7. 
+14:24:32 PM: One block is dug out. Its mining time is: 0. Its miner is 1. 
+14:24:32 PM: One block is dug out. Its mining time is: 0. Its miner is 6. 
+14:24:32 PM: One block is dug out. Its mining time is: 0. Its miner is 8. 
+14:24:32 PM: One block is dug out. Its mining time is: 0. Its miner is 7. 
+14:24:33 PM: One block is dug out. Its mining time is: 0. Its miner is 8. 
+14:24:33 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:34 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:34 PM: One block is dug out. Its mining time is: 0. Its miner is 7. 
+14:24:35 PM: One block is dug out. Its mining time is: 0. Its miner is 3. 
+14:24:35 PM: One block is dug out. Its mining time is: 0. Its miner is 2. 
+14:24:35 PM: One block is dug out. Its mining time is: 0. Its miner is 2. 
+14:24:36 PM: One block is dug out. Its mining time is: 0. Its miner is 2. 
+14:24:36 PM: block chain length is: 33
+14:24:36 PM: total evil blocks is: 0
+14:24:36 PM: average mining time is: 0
+14:24:36 PM: maximum mining time is: 8
+14:24:36 PM: minimum mining time is: 0
+14:24:36 PM: The miner account is:
+14:24:36 PM: {10: 1, 3: 7, 6: 2, 2: 5, 7: 5, 4: 1, 5: 4, 8: 4, 9: 2, 1: 2}

@@ -1,6 +1,5 @@
 from hashlib import sha256
-from block.common import gen_tx_root
-from block.common import gen_nonce
+from util.gen import gen_tx_root, gen_nonce
 import time
 
 
@@ -55,6 +54,9 @@ class block:
         self.time_stamp = 1608040156.650194
         self.previous_hash = str(0)
 
+    def hack(self):
+        self.tx_root = "This block is hacked."
+
     # difficulty is a str starts with several zeros
     def set_difficulty(self, difficulty):
         self.t = difficulty
@@ -68,7 +70,7 @@ def gen_genesis():
 
 if __name__ == "__main__":
     s = sha256()
-    s.update("nihao".encode("utf-8"))
+    s.update("hello world".encode("utf-8"))
     initial_hash = s.hexdigest()
     new_block = block(initial_hash)
 
